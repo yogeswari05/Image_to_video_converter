@@ -128,6 +128,15 @@ This Image to Video Converter app is a web application built using Flask. It all
   - Route: `/logout_and_delete`
   - Logs out the user and deletes selected images and merged video.
 
+## Deployment
+
+This app has been deployed on Render. You can access it using the following link:
+[Image to Video Converter App](https://project-amigos.onrender.com/)
+
+## Academic Project
+
+This application is part of an academic group project. It was developed by a team of students to demonstrate the integration of various technologies such as Flask, MySQL, JWT, and video processing libraries.
+
 ## Usage
 
 To use this app, follow these steps:

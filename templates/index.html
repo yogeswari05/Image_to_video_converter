@@ -37,11 +37,6 @@
 </head>
 
 <body>
-  <!-- {% if error_message %}
-  <p style="color: red;">{{ error }}</p>
-  {% endif %} -->
-
-
   <div class="video-container">
     <video autoplay loop muted id="background-video">
       <source src="/static/circ.mp4" type="video/mp4">
@@ -100,15 +95,9 @@
             </div>
             <a href="{{ url_for('signup') }}"><button>SUBMIT</button> </a>
           </form>
-
-          <!-- Add this code snippet to index.html -->
-          <!-- <a href="{{ url_for('mult_image') }}">Go to Mult Image Page</a> -->
-
         </div>
       </div>
-      <!-- frontbox -->
     </div>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
   </div>
 
   <script src="{{ url_for('static', filename='login.js') }}"></script>

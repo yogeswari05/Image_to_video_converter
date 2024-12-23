@@ -8,12 +8,6 @@
 
    <title>Create Video</title>
    <style>
-      /* .btns {
-         display: flex;
-         justify-content: space-evenly;
-         align-items: center;
-         border :2px solid white;
-      } */
       body {
          margin: 0;
          padding: 0;
@@ -167,20 +161,6 @@
          background-color: skyblue;
       }
 
-      /* .btn{
-         margin-top: 150px;
-      }
-      .btn {
-         color: white;
-         padding: 10px 15px;
-         border: none;
-         border-radius: 5px;
-         cursor: pointer;
-         background-color: #3498db;
-         border: 1px solid white;
-         border-color: white;
-      } */
-
       #addAudioButton:hover {
          background-color: #1d618f;
          transition: 1s;
@@ -300,17 +280,6 @@
          console.log(".[[[[]]]]");
 
       });
-      // });
-      // function display_audio_inserted(){
-      //    let xx=document.querySelector("#addAudioButton");
-      //    xx.addEventListener("click", function () {
-
-      //       mainVideo.style.display = "none";
-      //       // audioVideo.style.src = '/static/merged_video.mp4'
-      //       audioVideo.style.display = "block";
-      //       console.log("blocked.........");
-      //    });
-      // }
 
       function displayMergedVideo(mergedVideoPath) {
          var mainVideo = document.getElementById("video-container");
@@ -330,14 +299,6 @@
          mainVideo.style.display = "none";
          console.log(audioVideo.style.src);
 
-         // audioVideo.style.src="/static/merged_video.mp4"
-         // audioVideo.style.display = "block";
-         // mainVideo.style.display = "none";
-         // console.log(audioVideo.style.src);
-         // Update the source of the merged video
-         // document.getElementById("mergedVideo").src = mergedVideoPath;
-         // Display the merged video
-         // var mergedVideo = document.getElementById("merged_video-container");
       }
 
       function fetch_video() {

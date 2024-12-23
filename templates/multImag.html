@@ -244,23 +244,6 @@
     </form>
     <div id="image-preview-container"></div>
 
-    <!-- <a href="{{ url_for('video') }}">
-        <button id="create-video-btn"><i class='bx bxs-video-plus'></i></button>
-    </a> -->
-
-    <!-- <h4 id="he4">Upload Images</h4> -->
-
-    <!-- Display flashed messages -->
-    <!-- {% with messages = get_flashed_messages() %}
-    {% if messages %}
-    <div>
-        {% for message in messages %}
-        <p style="color: {% if 'error' in message %}red{% else %}green{% endif %}">{{ message }}</p>
-        {% endfor %}
-    </div>
-    {% endif %}
-    {% endwith %} -->
-
     <script>
         
         var uploadedFiles = []; // Global array to store uploaded file names
@@ -333,19 +316,6 @@
             uploadedFiles = Array.from(files).map(file => file.name);
             console.log('Uploaded Image Names:', uploadedFiles);
         }
-
-        // function allowDrop(event) {
-        //     event.preventDefault();
-        // }
-
-        // function drop(event) {
-        //     event.preventDefault();
-
-        //     const fileInput = document.getElementById('upload-input');
-
-        //     // Trigger the handleFileSelect function
-        //     handleFileSelect(fileInput);
-        // }
 
         function uploadFilesToFlask() {
             console.log("hello1");

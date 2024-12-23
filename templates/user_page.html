@@ -69,9 +69,6 @@
 
       .image-grid {
          display: none;
-         /* Initially hide the image grid */
-         /* height: 100vh; */
-         /* Set the height to 100% of the viewport height */
          overflow-y: auto;
          /* Enable vertical scrolling */
       }
@@ -161,28 +158,25 @@
     margin-right: 10px; /* Adjust margin as needed */
 }
 
+   @keyframes glowAnimation {
+      0% {
+            box-shadow: 0 0 10px #3498db;
+      }
 
+      100% {
+            box-shadow: 0 0 20px #3498db;
+      }
+   }
 
+   @keyframes blinkAnimation {
+      0% {
+            opacity: 1;
+      }
 
-         @keyframes glowAnimation {
-            0% {
-                box-shadow: 0 0 10px #3498db;
-            }
-
-            100% {
-                box-shadow: 0 0 20px #3498db;
-            }
-        }
-
-        @keyframes blinkAnimation {
-            0% {
-                opacity: 1;
-            }
-
-            100% {
-                opacity: 0.8;
-            }
-        }
+      100% {
+            opacity: 0.8;
+      }
+   }
    </style>
 </head>
 
@@ -197,11 +191,6 @@
          <a id="o1" href="{{ url_for('logout_and_delete') }}">LOG OUT</a>
       </div>
    </div>
-   <!-- <form action="/value" method="POST">
-      <label for="inputValue">Input Value:</label><br>
-      <input type="text" id="inputValue" name="inputValue"><br><br>
-      <input type="submit" value="Submit">
-  </form> -->
 
    <div class="cont-1" style="display: none;">
       <h2>User Details:</h2>
@@ -218,14 +207,7 @@
       <!-- <button onclick="uploadSelectedFilesToFlask()">Submit.. Selected files</button> -->
    <!-- </a> -->
    <button id="o2" onclick="uploadSelectedFilesToFlask()" style="display: none"><i class='bx bxs-video-plus'></i>Create Video</button>
-   <!-- <script>
-      
-      
-            })
-            .catch(error => console.error("Error fetching or processing images:", error));
-      }
 
-   </script> -->
    <script>
       function uploadSelectedFilesToFlask() {
       console.log('entered..');
